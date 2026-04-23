@@ -28,6 +28,7 @@ export type ToolbarButton = 'camera' |
     'filesharing' |
     'filmstrip' |
     'fullscreen' |
+    'hai-invite' |
     'hangup' |
     'help' |
     'highlight' |
