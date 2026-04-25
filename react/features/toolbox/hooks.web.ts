@@ -69,7 +69,6 @@ import HelpButton from './components/HelpButton';
 import AudioSettingsButton from './components/web/AudioSettingsButton';
 import CustomOptionButton from './components/web/CustomOptionButton';
 import FullscreenButton from './components/web/FullscreenButton';
-import HAIInviteButton from './components/web/HAIInviteButton';
 import LinkToSalesforceButton from './components/web/LinkToSalesforceButton';
 import ProfileButton from './components/web/ProfileButton';
 import ShareDesktopButton from './components/web/ShareDesktopButton';
@@ -115,12 +114,6 @@ const raisehand = {
 const invite = {
     key: 'invite',
     Content: InviteButton,
-    group: 2
-};
-
-const haiInvite = {
-    key: 'hai-invite',
-    Content: HAIInviteButton,
     group: 2
 };
 
@@ -327,7 +320,6 @@ export function useToolboxButtons(
         reactions,
         'participants-pane': participants,
         invite: _invite,
-        'hai-invite': haiInvite,
         tileview,
         'toggle-camera': toggleCameraButton,
         videoquality: videoQuality,

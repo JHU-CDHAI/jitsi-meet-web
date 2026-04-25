@@ -34,8 +34,23 @@ import { FakeParticipant, IJitsiParticipant, IParticipant, ISourceInfo } from '.
  */
 const AVATAR_QUEUE: Object[] = [];
 const AVATAR_CHECKED_URLS = new Map();
+/**
+ * JHU-CDHAI: AI bots join via jigasi, which would normally cause Jitsi to
+ * show a generic gateway icon. We override that with a custom cute-robot
+ * avatar for any participant whose display name matches the *-hai-bot
+ * convention (e.g. "jluo41-hai-bot"). Runs before the isJigasi check so
+ * the gateway icon is replaced cleanly. Other jigasi participants (real
+ * SIP callers) keep the gateway icon.
+ */
+const HAI_BOT_AVATAR_URL = 'images/hai-bot-avatar.svg';
+const HAI_BOT_NAME_PATTERN = /-hai-bot$/i;
+
 /* eslint-disable arrow-body-style */
 const AVATAR_CHECKER_FUNCTIONS = [
+    (participant: IParticipant) => {
+        return participant?.name && HAI_BOT_NAME_PATTERN.test(participant.name)
+            ? HAI_BOT_AVATAR_URL : null;
+    },
     (participant: IParticipant) => {
         return participant?.isJigasi ? JIGASI_PARTICIPANT_ICON : null;
     },

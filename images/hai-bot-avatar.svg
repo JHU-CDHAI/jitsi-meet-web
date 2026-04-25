@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- background -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7BC9FF"/>
+      <stop offset="100%" stop-color="#3F8FE8"/>
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="0.35" cy="0.35" r="0.65">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#DFF1FF"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bg)"/>
+
+  <!-- antenna -->
+  <line x1="100" y1="35" x2="100" y2="20" stroke="#1F4E8A" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="100" cy="17" r="6" fill="#FFCE3D"/>
+  <circle cx="98" cy="15" r="2" fill="#FFF" opacity="0.7"/>
+
+  <!-- head plate (rounded rect) -->
+  <rect x="40" y="50" width="120" height="110" rx="34" ry="34" fill="#F4F8FD" stroke="#1F4E8A" stroke-width="3"/>
+
+  <!-- ear pods -->
+  <circle cx="38" cy="105" r="10" fill="#1F4E8A"/>
+  <circle cx="162" cy="105" r="10" fill="#1F4E8A"/>
+  <circle cx="38" cy="105" r="4" fill="#FFCE3D"/>
+  <circle cx="162" cy="105" r="4" fill="#FFCE3D"/>
+
+  <!-- eyes (big and cute) -->
+  <ellipse cx="76" cy="105" rx="18" ry="22" fill="#1F2A44"/>
+  <ellipse cx="124" cy="105" rx="18" ry="22" fill="#1F2A44"/>
+  <ellipse cx="76" cy="105" rx="14" ry="18" fill="url(#eyeGlow)"/>
+  <ellipse cx="124" cy="105" rx="14" ry="18" fill="url(#eyeGlow)"/>
+  <!-- pupils -->
+  <circle cx="79" cy="108" r="6" fill="#1F2A44"/>
+  <circle cx="127" cy="108" r="6" fill="#1F2A44"/>
+  <!-- highlights -->
+  <circle cx="73" cy="100" r="3" fill="#FFFFFF"/>
+  <circle cx="121" cy="100" r="3" fill="#FFFFFF"/>
+
+  <!-- cheeks -->
+  <ellipse cx="58" cy="135" rx="9" ry="5" fill="#FFB4C8" opacity="0.65"/>
+  <ellipse cx="142" cy="135" rx="9" ry="5" fill="#FFB4C8" opacity="0.65"/>
+
+  <!-- mouth -->
+  <path d="M 86 138 Q 100 150 114 138" fill="none" stroke="#1F2A44" stroke-width="3" stroke-linecap="round"/>
+</svg>

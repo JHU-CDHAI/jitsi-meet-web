@@ -26,6 +26,7 @@ import {
 import CopyMeetingLinkSection from './CopyMeetingLinkSection';
 import DialInLimit from './DialInLimit';
 import DialInSection from './DialInSection';
+import InviteAgentSection from './InviteAgentSection';
 import InviteByEmailSection from './InviteByEmailSection';
 import InviteContactsSection from './InviteContactsSection';
 import LiveStreamSection from './LiveStreamSection';
@@ -155,6 +156,7 @@ function AddPeopleDialog({
             ok = {{ hidden: true }}
             titleKey = 'addPeople.inviteMorePrompt'>
             <div className = 'invite-more-dialog'>
+                <InviteAgentSection />
                 { _inviteContactsVisible && <InviteContactsSection /> }
                 {_urlSharingVisible ? <CopyMeetingLinkSection url = { _inviteUrl } /> : null}
                 {

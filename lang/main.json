@@ -15,6 +15,16 @@
         "disabled": "You can't invite people.",
         "failedToAdd": "Failed to add participants",
         "googleEmail": "Google Email",
+        "haiAgent": {
+            "failed": "Invite failed: {{error}}",
+            "invite": "Invite",
+            "invited": "Invited {{name}}",
+            "inviting": "Inviting {{name}}…",
+            "loadFailed": "Could not load agents",
+            "noMatch": "No matching agents",
+            "placeholder": "Type an agent name…",
+            "title": "Invite an AI agent"
+        },
         "inviteMoreHeader": "You are the only one in the meeting",
         "inviteMoreMailSubject": "Join {{appName}} meeting",
         "inviteMorePrompt": "Invite more people",
